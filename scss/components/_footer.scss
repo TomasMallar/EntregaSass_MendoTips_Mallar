@@ -1,0 +1,15 @@
+/* Footer */
+.footer {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.fot{
+    margin-right: 10px;
+
+    &:hover{   
+    transform: scale(1.5);  
+    }
+}
+
+/* Fin Footer */
