@@ -294,5 +294,13 @@
     "yargs": "^17.3.1",
     "supports-preserve-symlinks-flag": "^1.0.0",
     "yargs-parser": "^20.2.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomasMallar/EntregaSass_MendoTips_Mallar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TomasMallar/EntregaSass_MendoTips_Mallar/issues"
+  },
+  "homepage": "https://github.com/TomasMallar/EntregaSass_MendoTips_Mallar#readme"
 }

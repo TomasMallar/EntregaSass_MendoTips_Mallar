@@ -5,10 +5,9 @@
     padding: 0.5rem 1rem;      
 }
 #trans:hover {
-    color: #00bfd8;
-    font-size: 18px;
-    transition: 0.75s;
-    transform: scale(1);
+    transition: map-get($transi, transition-transi);
+    @include fontStyle();
+    @include prefijos(scale(1));
 }
 a {
     color: #9e9e9e;

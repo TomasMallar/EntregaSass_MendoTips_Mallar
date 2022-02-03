@@ -2,27 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Mono:wght@300&display=swap');
 
 #portada{
-    background-image: url('Multimedia/Imagenes/portada.png');
     width: 100%;
     height: 100vh;
+    background-image: url('../Multimedia/Imagenes/portada.png');
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
 }
 
 .bien{
-    display: flex;
-    justify-content:center;
-    align-items: center;
+    @extend %flex;
     color: aquamarine;
 
     &:hover, &:focus{
-        color: #fff;
-        transition: background-color 2s ease-out;
-        outline: 0;
+        transition: map-get($trans , transition-trans);
+        @include fontStyle2();
     }
 }
 
@@ -46,23 +41,17 @@ p {
 
 .texto{
     margin: 50px auto;
-    width: 400px;
-    padding: 50px;
 }
 
 .sal{
     color: black;
 }
 .cont{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
     margin: 50px;
 }
 .centrado{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
 }
 
 /* Fin Sections */

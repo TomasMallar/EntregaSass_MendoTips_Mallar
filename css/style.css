@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+/* Mixin */
+/* Extends */
+/* plantilla o class*/
+.footer, .centrado, .cont, .bien, #portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Map */
 /* Header */
 .nav-link {
   display: block;
@@ -13,9 +23,9 @@
 }
 
 #trans:hover {
+  transition: 0.75s;
   color: #00bfd8;
   font-size: 18px;
-  transition: 0.75s;
   transform: scale(1);
 }
 
@@ -28,26 +38,20 @@ a {
 /* Fin Header */
 /* Sections */
 #portada {
-  background-image: url("Multimedia/Imagenes/portada.png");
   width: 100%;
   height: 100vh;
+  background-image: url("../Multimedia/Imagenes/portada.png");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .bien {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: aquamarine;
 }
 .bien:hover, .bien:focus {
+  transition: color 2s ease-out;
   color: #fff;
-  transition: background-color 2s ease-out;
   outline: 0;
 }
 
@@ -66,11 +70,11 @@ h1 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-   font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .texto {
-  margin: 50px;
+  margin: 50px auto;
 }
 
 .sal {
@@ -78,26 +82,11 @@ p {
 }
 
 .cont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 50px;
-}
-
-.centrado {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Fin Sections */
 /* Footer */
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .fot {
   margin-right: 10px;
 }
